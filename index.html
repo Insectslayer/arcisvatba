@@ -1,192 +1,336 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trnka &amp; Šípek</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trnka &amp; Šípek</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero -->
+    <section id="hero">
+      <img src="img/15 b.png" class="eyebrow img-vert-flip" />
+      <h1>
+        <div class="name right">Barbora Gavendová</div>
+        <div class="amp">&amp;</div>
+        <div class="name left">Matěj Lang</div>
+      </h1>
+      <br />
+      <p class="date">12. září &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; Fulnek</p>
+      <img src="img/24.png" class="scroll-hint img-vert-flip" />
+    </section>
 
-  <!-- Hero -->
-  <section id="hero">
-    <img src="img/15 b.png" class="eyebrow img-vert-flip" />
-    <h1>
-      <div class="name right">Barbora Gavendová</div>
-      <div class="amp">&amp;</div>
-      <div class="name left">Matěj Lang</div>
-    </h1>
-    <br/>
-    <p class="date">12. září &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; Fulnek</p>
-    <img src="img/24.png" class="scroll-hint img-vert-flip" />
-  </section>
+    <section>
+      <div class="heading-container">
+        <img src="img/3.png" style="width: 100px" />
+        <h2>Obřad</h2>
+        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+      </div>
+      <p>
+        S radostí oznamujeme, že budeme 12. 9. 2026 oddáni ve 12:00 na zámku
+        Fulnek. Při hezkém počasí se obřad uskuteční v zámecké zahradě, v
+        případě deště pak ve vnitřních prostorech zámku. Obřad začne ve 12:00,
+        dostavte se na místo prosím alespoň s desetiminutovým předstihem.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <a href="https://mapy.com/s/hopezedura" target="_blank">
+            <div class="icon">
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 260 260"
+              >
+                <path
+                  fill="var(--accent)"
+                  d="M115 .7c-29.1 4.4-51.9 14.9-72 33C14.4 59.4-.4 94.1.5 133c.2 8 .6 15.8 1 17.5 2.1 10 2.8 12.8 5.1 20 6.1 19.1 16.3 35.6 31.8 51 19.7 19.6 39.5 30.3 67.1 36.2 11.3 2.4 37.9 2.4 49.5-.1 35-7.5 64.1-27 83.2-55.8 9.2-13.9 17.3-33.5 19.4-47.3.3-2.2 1-6 1.4-8.5.9-4.8.6-30.4-.4-35.5-.4-1.7-1.1-5.3-1.6-8-2.9-14.2-10.4-31.7-19.5-45.6-6.1-9.2-24.7-27.9-34-34.1-14.7-9.8-31.8-16.9-49-20.4C147.1.9 121.2-.2 115 .7zm-9.7 57.8c1.9.8 4.7 2.9 6.2 4.7 2.6 3 9.2 15.7 13.9 26.8 6.2 14.3 11.6 26.3 12.1 26.8.8.9 20.4-19.9 30.4-32.3.9-1.1 3.3-4.2 5.4-6.8 2.1-2.6 4.3-4.7 5-4.7 2.2 0 10.2 9.6 11.9 14.4 1.5 4.1 1.7 7.4 1.2 23.4-.2 10.3-.7 20.5-.9 22.7-.2 2.2-.6 10.7-1 19-.8 19.3-1.2 23-3 26.5-1.7 3.2-6 5.1-9.2 3.9-6.4-2.3-8.2-12.2-8-42.8.1-17-.2-23.6-1-23.6-.7 0-4.7 3.4-9 7.5-11.9 11.6-20.6 18.8-24.3 20.4-5.9 2.4-7.2 1-16.2-17.1-9.6-19.5-10.2-20.2-11.4-12.7-1.9 12.3-6.6 33.3-9.3 41.5-4.7 14-12.4 29.3-16.3 32.3-3.4 2.5-12.4 5.9-19.2 7.1-4.6.9-4.9 2.1 3.7-18.5 15.2-36.8 21.7-66.1 21.3-96.5-.1-9.4.2-17.8.7-18.8 2-4.2 10.7-5.8 17-3.2z"
+                />
+              </svg>
+            </div>
+            <h3>Zámek Fulnek</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://mapy.com/s/bolumoruma" target="_blank">
+            <div class="icon">
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 260 260"
+              >
+                <path
+                  fill="var(--accent)"
+                  d="M115 .7c-29.1 4.4-51.9 14.9-72 33C14.4 59.4-.4 94.1.5 133c.2 8 .6 15.8 1 17.5 2.1 10 2.8 12.8 5.1 20 6.1 19.1 16.3 35.6 31.8 51 19.7 19.6 39.5 30.3 67.1 36.2 11.3 2.4 37.9 2.4 49.5-.1 35-7.5 64.1-27 83.2-55.8 9.2-13.9 17.3-33.5 19.4-47.3.3-2.2 1-6 1.4-8.5.9-4.8.6-30.4-.4-35.5-.4-1.7-1.1-5.3-1.6-8-2.9-14.2-10.4-31.7-19.5-45.6-6.1-9.2-24.7-27.9-34-34.1-14.7-9.8-31.8-16.9-49-20.4C147.1.9 121.2-.2 115 .7zm-9.7 57.8c1.9.8 4.7 2.9 6.2 4.7 2.6 3 9.2 15.7 13.9 26.8 6.2 14.3 11.6 26.3 12.1 26.8.8.9 20.4-19.9 30.4-32.3.9-1.1 3.3-4.2 5.4-6.8 2.1-2.6 4.3-4.7 5-4.7 2.2 0 10.2 9.6 11.9 14.4 1.5 4.1 1.7 7.4 1.2 23.4-.2 10.3-.7 20.5-.9 22.7-.2 2.2-.6 10.7-1 19-.8 19.3-1.2 23-3 26.5-1.7 3.2-6 5.1-9.2 3.9-6.4-2.3-8.2-12.2-8-42.8.1-17-.2-23.6-1-23.6-.7 0-4.7 3.4-9 7.5-11.9 11.6-20.6 18.8-24.3 20.4-5.9 2.4-7.2 1-16.2-17.1-9.6-19.5-10.2-20.2-11.4-12.7-1.9 12.3-6.6 33.3-9.3 41.5-4.7 14-12.4 29.3-16.3 32.3-3.4 2.5-12.4 5.9-19.2 7.1-4.6.9-4.9 2.1 3.7-18.5 15.2-36.8 21.7-66.1 21.3-96.5-.1-9.4.2-17.8.7-18.8 2-4.2 10.7-5.8 17-3.2z"
+                />
+              </svg>
+            </div>
+            <h3>Zámecká zahrada</h3>
+          </a>
+        </div>
+      </div>
+      <p>
+        Parkovat pro svatebčany je možné přímo v areálu zámku. Možné je také
+        parkovat na Komenského náměstí ve Fulneku a k zámku dojít.
+      </p>
+      <p class="comment">
+        Shodou náhod se tak stalo, že se Barča s Matějem potkali jeden kopec
+        vedle Fulneckého zámku. Bylo to v červenci 2017.
+      </p>
+    </section>
 
-  <!-- Our Story -->
-  <section id="story">
-    <h2>Our Story</h2>
-    <div class="divider"></div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula
-      nisi ut eros faucibus, a tincidunt felis posuere. Pellentesque habitant
-      morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-    </p>
-    <div class="cards">
-      <div class="card">
-        <div class="icon">✦</div>
-        <h3>How We Met</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <section>
+      <div class="heading-container">
+        <img src="img/3.png" style="width: 100px" />
+        <h2>Objekt</h2>
+        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
       </div>
-      <div class="card">
-        <div class="icon">✦</div>
-        <h3>The First Date</h3>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.</p>
+      <p>
+        Hostina proběhne v Rodném domě Johana Gregora Mendela na adrese Hynčice
+        69, Vražné.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <a href="https://mapy.com/s/duzebeveju" target="_blank">
+            <div class="icon">
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 260 260"
+              >
+                <path
+                  fill="var(--accent)"
+                  d="M115 .7c-29.1 4.4-51.9 14.9-72 33C14.4 59.4-.4 94.1.5 133c.2 8 .6 15.8 1 17.5 2.1 10 2.8 12.8 5.1 20 6.1 19.1 16.3 35.6 31.8 51 19.7 19.6 39.5 30.3 67.1 36.2 11.3 2.4 37.9 2.4 49.5-.1 35-7.5 64.1-27 83.2-55.8 9.2-13.9 17.3-33.5 19.4-47.3.3-2.2 1-6 1.4-8.5.9-4.8.6-30.4-.4-35.5-.4-1.7-1.1-5.3-1.6-8-2.9-14.2-10.4-31.7-19.5-45.6-6.1-9.2-24.7-27.9-34-34.1-14.7-9.8-31.8-16.9-49-20.4C147.1.9 121.2-.2 115 .7zm-9.7 57.8c1.9.8 4.7 2.9 6.2 4.7 2.6 3 9.2 15.7 13.9 26.8 6.2 14.3 11.6 26.3 12.1 26.8.8.9 20.4-19.9 30.4-32.3.9-1.1 3.3-4.2 5.4-6.8 2.1-2.6 4.3-4.7 5-4.7 2.2 0 10.2 9.6 11.9 14.4 1.5 4.1 1.7 7.4 1.2 23.4-.2 10.3-.7 20.5-.9 22.7-.2 2.2-.6 10.7-1 19-.8 19.3-1.2 23-3 26.5-1.7 3.2-6 5.1-9.2 3.9-6.4-2.3-8.2-12.2-8-42.8.1-17-.2-23.6-1-23.6-.7 0-4.7 3.4-9 7.5-11.9 11.6-20.6 18.8-24.3 20.4-5.9 2.4-7.2 1-16.2-17.1-9.6-19.5-10.2-20.2-11.4-12.7-1.9 12.3-6.6 33.3-9.3 41.5-4.7 14-12.4 29.3-16.3 32.3-3.4 2.5-12.4 5.9-19.2 7.1-4.6.9-4.9 2.1 3.7-18.5 15.2-36.8 21.7-66.1 21.3-96.5-.1-9.4.2-17.8.7-18.8 2-4.2 10.7-5.8 17-3.2z"
+                />
+              </svg>
+            </div>
+            <h3>Rodný dům Johana&nbsp;Gregora&nbsp;Mendela</h3>
+          </a>
+        </div>
       </div>
-      <div class="card">
-        <div class="icon">✦</div>
-        <h3>The Proposal</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint.</p>
-      </div>
-    </div>
-  </section>
+      <p>
+        Objekt je starší statek s velkou zděnou stodolou, kde proběhne hostina a
+        zábava, a kde budou někteří hosté moci na noc složit hlavu.
+      </p>
+      <p>
+        Hned u objektu jsou dvě parkoviště, jejich kapacita však není nekonečná.
+        Pokud budete např. v rámci rodiny cestovat jedním autem místo dvou,
+        ušetříte někomu jinému nebo i sobě nervy s hledáním dalšího parkování.
+      </p>
+      <p class="comment">
+        Potkali jsme se na táboře, který spolu doteď organizujeme, a k tomu sem
+        tam děláme i zážitkové akce pro dospělé účastníky. Naše svatba bude v
+        podobném stylu. Nečekejte luxusní pětihvězdičkový hotel, místo toho máme
+        moc hezký statek, který je rodným domem otce genetiky Johanna Gregora
+        Mendela. Fakt, že nevěsta vystudovala genetiku a ženich vyrůstal ulici
+        vedle kláštera, kde Mendel dělal své experimenty, je milá shoda náhod.
+      </p>
+    </section>
 
-  <!-- Schedule -->
-  <section id="schedule">
-    <h2>Day of Events</h2>
-    <div class="divider"></div>
-    <p>
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum consectetur adipiscing elit.
-    </p>
-    <div class="events">
-      <div class="event">
-        <p class="time">2:00 PM</p>
-        <h3>Ceremony</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nisi a felis tincidunt, eu faucibus lorem.</p>
+    <section>
+      <div class="heading-container">
+        <img src="img/3.png" style="width: 100px" />
+        <h2>Příjezdy</h2>
+        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
       </div>
-      <div class="event">
-        <p class="time">4:00 PM</p>
-        <h3>Cocktail Hour</h3>
-        <p>Pellentesque habitant morbi tristique senectus et netus malesuada fames ac turpis egestas varius.</p>
-      </div>
-      <div class="event">
-        <p class="time">6:00 PM</p>
-        <h3>Reception</h3>
-        <p>Quisque vehicula nisi ut eros faucibus, a tincidunt felis posuere. Vivamus accumsan risus eget ipsum.</p>
-      </div>
-      <div class="event">
-        <p class="time">11:00 PM</p>
-        <h3>Last Dance</h3>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-      </div>
-    </div>
-  </section>
+      <p>
+        Nevěsta s ženichem a svými velkorysými kamarády budou na objektu už od
+        čtvrtečního odpoledne. Předpokládáme, že většina svatebčanů přijede v
+        sobotu. Na objekt můžete dojet i před obřadem a odložit si tam např.
+        věci. Pokud s vámi počítáme s přespáním a vyhovovalo by vám ubytovat se
+        už i z pátku na sobotu, není to problém. Napište nám to ve formuláři.
+      </p>
+      <p>
+        Chystání svatby je skvělá skupinová aktivita, kde máte šanci poznat
+        rodiny a blízké kamarády v akci. Pokud si takovou příležitost nechcete
+        nechat ujít, rádi Vás uvidíme. Budeme uklízet objekt, zdobit a celkově
+        připravovat sobotní oslavu. Pokud nám chcete dojet pomoct ještě před
+        dnem svatby, zapište to prosím do formuláře.
+      </p>
+    </section>
 
-  <!-- Wedding Party -->
-  <section id="party">
-    <h2>Wedding Party</h2>
-    <div class="divider"></div>
-    <p>
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium totam rem aperiam eaque ipsa.
-    </p>
-    <div class="members">
-      <div class="member">
-        <div class="avatar">♡</div>
-        <h3>Lorem Ipsum</h3>
-        <p>Maid of Honour</p>
+    <section>
+      <div class="heading-container">
+        <img src="img/3.png" style="width: 100px" />
+        <h2>Přespání</h2>
+        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
       </div>
-      <div class="member">
-        <div class="avatar">♡</div>
-        <h3>Dolor Amet</h3>
-        <p>Bridesmaid</p>
-      </div>
-      <div class="member">
-        <div class="avatar">♡</div>
-        <h3>Consectetur</h3>
-        <p>Bridesmaid</p>
-      </div>
-      <div class="member">
-        <div class="avatar">♡</div>
-        <h3>Adipiscing</h3>
-        <p>Best Man</p>
-      </div>
-      <div class="member">
-        <div class="avatar">♡</div>
-        <h3>Elit Quisque</h3>
-        <p>Groomsman</p>
-      </div>
-      <div class="member">
-        <div class="avatar">♡</div>
-        <h3>Vehicula Nisi</h3>
-        <p>Groomsman</p>
-      </div>
-    </div>
-  </section>
+      <p>
+        Na statku je cca 40 lůžek na palandách ve dvou sdílených pokojích. Pokud
+        máte zájem, můžete také přespat ve stanu na louce a ve dvorku statku.
+        Pokud jsme se nedomluvili jinak, počítáme s tím, že spíte ve sdílených
+        pokojích. Případně si můžete zajistit ubytování po vlastní ose.
+      </p>
+      <p>
+        Pro některé členy rodiny jsme zarezervovali nedaleký hotel. Všem, se
+        kterými počítáme s přespáním na hotelu, se osobně ozveme a domluvíme se.
+      </p>
+    </section>
 
-  <!-- Gallery -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="divider"></div>
-    <p>
-      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-      sed quia consequuntur magni dolores eos ratione voluptatem sequi nesciunt.
-    </p>
-    <div class="grid">
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-    </div>
-  </section>
+    <section>
+      <div class="heading-container">
+        <img src="img/3.png" style="width: 100px" />
+        <h2>Formulář</h2>
+        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+      </div>
+      <p>
+        Abyste nám usnadnili veškeré plánování, vyplňte nám prosím formulář.
+        Potřebujeme totiž vědět, jestli dojedete, jestli máte nějaká stravovací
+        omezení, kde preferujete přespat, a kdy přijedete. Formulář vyplňte do
+        1. 8., ať víme, jestli s vámi máme počítat.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <a href="https://forms.gle/YsFtfpGKXGMs73er6" target="_blank">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="var(--accent)"
+                  d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"
+                />
+                <path
+                  fill="var(--accent)"
+                  d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"
+                />
+              </svg>
+            </div>
+            <h3>Vyplňte formulář</h3>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <!-- RSVP -->
-  <section id="rsvp">
-    <h2>RSVP</h2>
-    <div class="divider"></div>
-    <p>
-      Kindly reply by August 1, 2026. Ut enim ad minima veniam, quis nostrum
-      exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex.
-    </p>
-    <form>
-      <div>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" placeholder="Lorem Ipsum" />
+    <section>
+      <div class="heading-container">
+        <img src="img/3.png" style="width: 100px" />
+        <h2>Oblečení, psi & děti</h2>
+        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
       </div>
-      <div>
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="lorem@ipsum.com" />
+      <p>
+        Očekáváme přiměřeně společenské oblečení, smoking od vás nikdo nečeká a
+        módní policie byla uplacena kávou a koblihami, aby se svatebništi
+        vyhnuli. Pokud budete oblečeni méně honosně, čekají vás jen odsuzující
+        pohledy tetiček a babiček.
+      </p>
+      <p>
+        Co se barev týče, oblečte si, co jen se vám líbí a sluší, pokud to tedy
+        nebudou bílé svatební šaty, ty si už zamluvila nevěsta (a Oto je má
+        povolené taky). Pokud toužíte ladit s našimi dekoracemi a ubrusy,
+        plánujeme svatbu v těchto barvách:
+      </p>
+      <div class="colors">
+        <div class="color" style="background: var(--warm)"></div>
+        <div class="color" style="background: var(--accent)"></div>
+        <div class="color" style="background: var(--dark)"></div>
       </div>
-      <div>
-        <label for="guests">Number of Guests</label>
-        <select id="guests">
-          <option value="1">1 — Just me</option>
-          <option value="2">2 — Me &amp; a guest</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-      </div>
-      <div>
-        <label for="dietary">Dietary Requirements</label>
-        <input type="text" id="dietary" placeholder="Lorem ipsum (optional)" />
-      </div>
-      <div>
-        <label for="message">Message for the Couple</label>
-        <textarea id="message" placeholder="Lorem ipsum dolor sit amet…"></textarea>
-      </div>
-      <button type="submit">Send RSVP</button>
-    </form>
-  </section>
+      <p>
+        Oba jsme velcí milovníci psů a dělají nám velikou radost. To ale taky
+        znamená, že naše rodiny psy mají a tito psi budou na svatbě přítomni.
+        Doufáme, že s tím nemáte problém; pokud ano, tak není v našich silách s
+        tím nic udělat. Vaše pejsky bychom na svatbě moc rádi pomazlili, bohužel
+        pes nevěstiny rodiny má mnoho názorů na jiné psy, veskrze negativních.
+        Aby byly ušetřeny nervy rodičů nevěsty, nechte prosím své psy doma.
+        Fenky mají vstup povolen (nevěstin pes je sexista).
+      </p>
+      <p>
+        Děti, narozdíl od psů, jsou srdečně vítány! Jen je prosíme zmiňte ve
+        formuláři.
+      </p>
+      <p class="comment">
+        Na svatbě budou minimálně tito dva psi: Frodo (pes nevěstiných rodičů),
+        jehož nejlepší kamarád je esence tenisového míčku, a Enigma (fenka
+        ženichových rodičů), jejíž životním posláním je vrtět.
+      </p>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="monogram">L &amp; I</div>
-    <p>September 14, 2026 &nbsp;·&nbsp; Dolor Sit, Amet</p>
-  </footer>
+    <section>
+      <div class="heading-container">
+        <img src="img/3.png" style="width: 100px" />
+        <h2>Kuchyně</h2>
+        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+      </div>
+      <p>
+        Potkali jsme se na táboře, o kterém s láskou říkáme, že není pro hubené
+        děti. Naši táboroví kuchaři (ke kterým mimochodem patří i ženich) jsou
+        prostě boží, zařídí vše a budete mít nebe v hubě. A budou vařit na
+        svatbě i nám! Nečekejte ale žádnou táborovou kuchyni, vaří líp než
+        kdejaká restaurace.
+      </p>
+      <p>
+        Jídlo pro Vás bude zajištěné od sobotního oběda až do nedělní snídaně,
+        na kterou čekejte hlavně hromadu jídla, které jsme do sebe nezvládli
+        nacpat předchozí den.
+      </p>
+      <p>
+        Co se týče sladkého jídla, můžete se určitě těšit na dort, svatební
+        koláčky a další zákusky. Pokud se chcete sami vytahovat svými
+        cukrářskými schopnostmi, můžete donést sladký výtvor vlastní výroby.
+      </p>
+      <p>
+        Abychom věděli, co všechno můžete a nemůžete jíst, vyplňte prosím náš
+        formulář.
+      </p>
+    </section>
 
-</body>
+    <section>
+      <div class="heading-container">
+        <img src="img/3.png" style="width: 100px" />
+        <h2>Program</h2>
+        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+      </div>
+      <p>
+        Pár es si necháme v rukávu, můžeme ale prozradit, že budete mít šanci se
+        podívat do Mendelova muzea, vidět fyzikální představení, a hodně hodně
+        tančit. Jsme nadšení tanečníci standardu, latiny a především swingu, tak
+        si oprašte své choreografie a oblíbené tance, baby přece nebude sedět v
+        koutě!
+      </p>
+    </section>
+
+    <section>
+      <div class="heading-container">
+        <img src="img/3.png" style="width: 100px" />
+        <h2>Svatební dary</h2>
+        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+      </div>
+      <p>
+        Velikou radost nám udělá přáníčko s osobním vzkazem, třeba nějakou
+        vzpomínkou, co na jednoho z nás nebo na nás oba máte, a třeba nějakou
+        fotkou. Domácnost vybavenou máme a porcelánoví jeleni ve skoku už jsou
+        taky na cestě, takže nemusíte nosit vlastní. Pokud se cítíte obzvlášť
+        štědře, potěší nás finanční dar na naše nové bydlení ve Vídni, kam se
+        plánujeme na čas stěhovat. Samozřejmě ale peníze neočekáváme a od
+        studentů je nepřijímáme; to si nechte na pivo a něco hezkého na sebe.
+      </p>
+    </section>
+
+    <section>
+      <div class="heading-container">
+        <img src="img/3.png" style="width: 100px" />
+        <h2>Fotky</h2>
+        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+      </div>
+      <p>
+        Máme domluveného profesionálního a velice šikovného fotografa, takže
+        vlastní zrcadlovku můžete nechat doma. Po svatbě fotky naleznete na
+        těchto stránkách a ještě vám pošleme e‑mailem odkaz.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="monogram">M&amp;B</div>
+      <p>Nepropadejte panice!</p>
+    </footer>
+  </body>
 </html>

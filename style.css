@@ -1,17 +1,41 @@
 /* ─── Reset & Base ─────────────────────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root {
-  --cream:   #faf7f4;
-  --warm:    #f0ebe4;
-  --accent:  #b0956b;
-  --dark:    #2c2825;
-  --muted:   #7a7067;
-  --serif:   'Georgia', 'Times New Roman', serif;
-  --sans:    'Helvetica Neue', Arial, sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html { scroll-behavior: smooth; }
+@font-face {
+  font-family: "Minion Pro";
+  src: url("font/MinionPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proba Pro";
+  src: url("font/ProbaPro-Light.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --cream: #faf7f4;
+  --warm: #f0ebe4;
+  --warm-dark: #e5ded6;
+  --warm-darker: #d8d0c6;
+  --accent: #b0956b;
+  --dark: #2c2825;
+  --muted: #7a7067;
+  --serif: "Minion Pro", "Georgia", "Times New Roman", serif;
+  --sans: "Proba Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--cream);
@@ -22,7 +46,9 @@ body {
 }
 
 /* ─── Typography ────────────────────────────────────────────────── */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--serif);
   font-weight: normal;
   letter-spacing: 0.04em;
@@ -31,7 +57,6 @@ h1, h2, h3 {
 h2 {
   font-size: clamp(1.6rem, 4vw, 2.4rem);
   color: var(--accent);
-  margin-bottom: 1rem;
 }
 
 p {
@@ -40,29 +65,24 @@ p {
   margin: 0 auto 1rem;
 }
 
-/* ─── Nav ───────────────────────────────────────────────────────── */
-nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  padding: 1rem 2rem;
-  background: rgba(250, 247, 244, 0.88);
-  backdrop-filter: blur(6px);
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+.comment {
+  font-style: italic;
+  max-width: 60ch;
+  border: 1.5px solid var(--warm-dark);
+  border-radius: 2px;
+  padding: 1rem;
 }
 
-nav a {
+/* ─── Links ─────────────────────────────────────────────────────── */
+a {
   color: var(--dark);
   text-decoration: none;
   transition: color 0.2s;
 }
 
-nav a:hover { color: var(--accent); }
+a:hover {
+  color: var(--accent);
+}
 
 /* ─── Sections ──────────────────────────────────────────────────── */
 section {
@@ -70,13 +90,28 @@ section {
   text-align: center;
 }
 
-section:nth-child(even) { background: var(--warm); }
+section:nth-child(even) {
+  background: var(--warm);
+}
 
 .divider {
   width: 48px;
   height: 1px;
   background: var(--accent);
   margin: 1.5rem auto 2rem;
+}
+
+.divider-img {
+  width: 100px;
+  margin: 1rem auto 1rem;
+}
+
+section .heading-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 /* ─── Hero ──────────────────────────────────────────────────────── */
@@ -92,7 +127,7 @@ section:nth-child(even) { background: var(--warm); }
 
 #hero .eyebrow {
   margin-bottom: 1.5rem;
-  width: 60%;
+  width: 50%;
 }
 
 #hero h1 {
@@ -129,183 +164,67 @@ section:nth-child(even) { background: var(--warm); }
 }
 
 .img-vert-flip {
-    -webkit-transform: scale(-1, 1);
-    -moz-transform: scale(-1, 1);
-    -o-transform: scale(-1, 1);
-    transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
 
 .img-hor-flip {
-    -webkit-transform: scale(1, -1);
-    -moz-transform: scale(1, -1);
-    -o-transform: scale(1, -1);
-    transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
 }
 
-
-/* ─── Story ─────────────────────────────────────────────────────── */
-#story .cards {
+/* ─── Cards ─────────────────────────────────────────────────────── */
+.cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin-top: 2.5rem;
+  margin: 2.5rem;
 }
 
-#story .card {
-  flex: 1 1 220px;
-  max-width: 280px;
-  padding: 2rem 1.5rem;
-  border: 1px solid #e5ded6;
+.card {
+  flex: 1 1;
+  max-width: 300px;
+  padding: 1rem 1rem;
+  border: 1.5px solid var(--warm-darker);
   border-radius: 2px;
+  background: var(--warm-dark);
 }
 
-#story .card .icon {
+.card .icon {
   font-size: 1.4rem;
-  margin-bottom: 0.8rem;
   color: var(--accent);
 }
 
-#story .card h3 {
+.card h3 {
   font-size: 1rem;
   letter-spacing: 0.06em;
   margin-bottom: 0.6rem;
 }
 
-#story .card p { font-size: 0.88rem; margin: 0; }
+.card p {
+  font-size: 0.88rem;
+  margin: 0;
+}
 
-/* ─── Schedule ──────────────────────────────────────────────────── */
-#schedule .events {
+/* ─── Color swatches ────────────────────────────────────────────────────── */
+.colors {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2.5rem;
-  margin-top: 2.5rem;
-}
-
-#schedule .event {
-  flex: 1 1 200px;
-  max-width: 260px;
-}
-
-#schedule .event .time {
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 0.4rem;
-}
-
-#schedule .event h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-
-#schedule .event p { font-size: 0.88rem; }
-
-/* ─── Wedding Party ─────────────────────────────────────────────── */
-#party .members {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2.5rem;
-}
-
-#party .member {
-  flex: 1 1 140px;
-  max-width: 170px;
-}
-
-#party .member .avatar {
-  width: 88px;
-  height: 88px;
-  border-radius: 50%;
-  background: #ddd5c8;
-  margin: 0 auto 0.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--cream);
-  font-size: 1.5rem;
-}
-
-#party .member h3 { font-size: 0.9rem; letter-spacing: 0.06em; margin-bottom: 0.2rem; }
-
-#party .member p { font-size: 0.78rem; margin: 0; }
-
-/* ─── RSVP ──────────────────────────────────────────────────────── */
-#rsvp form {
-  max-width: 480px;
-  margin: 2.5rem auto 0;
-  display: flex;
-  flex-direction: column;
   gap: 1rem;
-  text-align: left;
+  justify-content: center;
+  margin: 2rem 0;
 }
 
-#rsvp label {
-  font-size: 0.75rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-  display: block;
-  margin-bottom: 0.3rem;
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1.5px solid var(--warm-darker);
 }
-
-#rsvp input,
-#rsvp select,
-#rsvp textarea {
-  width: 100%;
-  padding: 0.65rem 0.85rem;
-  border: 1px solid #d8d0c6;
-  border-radius: 2px;
-  background: var(--cream);
-  color: var(--dark);
-  font-family: var(--sans);
-  font-size: 0.9rem;
-  outline: none;
-  transition: border-color 0.2s;
-}
-
-#rsvp input:focus,
-#rsvp select:focus,
-#rsvp textarea:focus { border-color: var(--accent); }
-
-#rsvp textarea { height: 110px; resize: vertical; }
-
-#rsvp button {
-  padding: 0.75rem 2.2rem;
-  background: transparent;
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  font-family: var(--sans);
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  align-self: flex-start;
-}
-
-#rsvp button:hover { background: var(--accent); color: var(--cream); }
-
-/* ─── Gallery ───────────────────────────────────────────────────── */
-#gallery .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 0.6rem;
-  margin-top: 2.5rem;
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#gallery .grid .cell {
-  background: #ddd5c8;
-  aspect-ratio: 1;
-  border-radius: 2px;
-}
-
-#gallery .grid .cell:nth-child(3n+1) { background: #d4cabc; }
-#gallery .grid .cell:nth-child(3n+2) { background: #ccc2b3; }
 
 /* ─── Footer ────────────────────────────────────────────────────── */
 footer {
@@ -323,4 +242,9 @@ footer .monogram {
   margin-bottom: 0.6rem;
 }
 
-footer p { color: #8c8078; font-size: 0.78rem; letter-spacing: 0.1em; max-width: none; }
+footer p {
+  color: #8c8078;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  max-width: none;
+}
