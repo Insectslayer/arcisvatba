@@ -11,9 +11,9 @@
     <section id="hero">
       <img src="img/15 b.png" class="eyebrow img-vert-flip" />
       <h1>
-        <div class="name right">Barbora Gavendová</div>
+        <div class="name" style="color: var(--blue)">Barbora Gavendová</div>
         <div class="amp">&amp;</div>
-        <div class="name left">Matěj Lang</div>
+        <div class="name" style="color: var(--red)">Matěj Lang</div>
       </h1>
       <br />
       <p class="date">12. září &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; Fulnek</p>
@@ -23,7 +23,7 @@
     <section>
       <div class="heading-container">
         <img src="img/3.png" style="width: 100px" />
-        <h2>Obřad</h2>
+        <h2 class="section-heading">Obřad</h2>
         <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
       </div>
       <p>
@@ -84,9 +84,7 @@
 
     <section>
       <div class="heading-container">
-        <img src="img/3.png" style="width: 100px" />
-        <h2>Objekt</h2>
-        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+        <h2 class="section-heading" style="color: var(--blue)">Objekt</h2>
       </div>
       <p>
         Hostina proběhne v Rodném domě Johana Gregora Mendela na adrese Hynčice
@@ -109,7 +107,26 @@
                 />
               </svg>
             </div>
-            <h3>Rodný dům Johana&nbsp;Gregora&nbsp;Mendela</h3>
+            <h3>Mapa</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://www.mendelrodnydum.cz/cs/" target="_blank">
+            <div class="icon">
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="var(--accent)"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"
+                />
+              </svg>
+            </div>
+            <h3>Webové stránky</h3>
           </a>
         </div>
       </div>
@@ -132,11 +149,13 @@
       </p>
     </section>
 
+    <div class="divider-img">
+      <img src="img/1 c.png" style="width: 400px" />
+    </div>
+
     <section>
       <div class="heading-container">
-        <img src="img/3.png" style="width: 100px" />
-        <h2>Příjezdy</h2>
-        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+        <h2 class="section-heading" style="color: var(--red)">Příjezdy</h2>
       </div>
       <p>
         Nevěsta s ženichem a svými velkorysými kamarády budou na objektu už od
@@ -154,11 +173,13 @@
       </p>
     </section>
 
+    <div class="divider-img">
+      <img src="img/4 d.png" style="width: 400px" />
+    </div>
+
     <section>
       <div class="heading-container">
-        <img src="img/3.png" style="width: 100px" />
-        <h2>Přespání</h2>
-        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+        <h2 class="section-heading" style="color: var(--blue)">Přespání</h2>
       </div>
       <p>
         Na statku je cca 40 lůžek na palandách ve dvou sdílených pokojích. Pokud
@@ -172,11 +193,13 @@
       </p>
     </section>
 
+    <div class="divider-img">
+      <img src="img/2 e.png" style="width: 320px" />
+    </div>
+
     <section>
       <div class="heading-container">
-        <img src="img/3.png" style="width: 100px" />
-        <h2>Formulář</h2>
-        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+        <h2 class="section-heading" style="color: var(--red)">Formulář</h2>
       </div>
       <p>
         Abyste nám usnadnili veškeré plánování, vyplňte nám prosím formulář.
@@ -210,11 +233,15 @@
       </div>
     </section>
 
+    <div class="divider-img">
+      <img src="img/3 d.png" style="width: 320px" />
+    </div>
+
     <section>
       <div class="heading-container">
-        <img src="img/3.png" style="width: 100px" />
-        <h2>Oblečení, psi & děti</h2>
-        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+        <h2 class="section-heading" style="color: var(--blue)">
+          Oblečení, psi & děti
+        </h2>
       </div>
       <p>
         Očekáváme přiměřeně společenské oblečení, smoking od vás nikdo nečeká a
@@ -229,9 +256,9 @@
         plánujeme svatbu v těchto barvách:
       </p>
       <div class="colors">
-        <div class="color" style="background: var(--warm)"></div>
-        <div class="color" style="background: var(--accent)"></div>
-        <div class="color" style="background: var(--dark)"></div>
+        <div class="color" style="background: var(--blue)"></div>
+        <div class="color" style="background: var(--green)"></div>
+        <div class="color" style="background: var(--red)"></div>
       </div>
       <p>
         Oba jsme velcí milovníci psů a dělají nám velikou radost. To ale taky
@@ -253,11 +280,13 @@
       </p>
     </section>
 
+    <div class="divider-img">
+      <img src="img/5.png" style="width: 180px" />
+    </div>
+
     <section>
       <div class="heading-container">
-        <img src="img/3.png" style="width: 100px" />
-        <h2>Kuchyně</h2>
-        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+        <h2 class="section-heading" style="color: var(--red)">Kuchyně</h2>
       </div>
       <p>
         Potkali jsme se na táboře, o kterém s láskou říkáme, že není pro hubené
@@ -282,11 +311,13 @@
       </p>
     </section>
 
+    <div class="divider-img">
+      <img src="img/11 b.png" style="width: 180px" />
+    </div>
+
     <section>
       <div class="heading-container">
-        <img src="img/3.png" style="width: 100px" />
-        <h2>Program</h2>
-        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+        <h2 class="section-heading" style="color: var(--blue)">Program</h2>
       </div>
       <p>
         Pár es si necháme v rukávu, můžeme ale prozradit, že budete mít šanci se
@@ -297,11 +328,13 @@
       </p>
     </section>
 
+    <div class="divider-img">
+      <img src="img/16.png" style="width: 140px" />
+    </div>
+
     <section>
       <div class="heading-container">
-        <img src="img/3.png" style="width: 100px" />
-        <h2>Svatební dary</h2>
-        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+        <h2 class="section-heading" style="color: var(--red)">Svatební dary</h2>
       </div>
       <p>
         Velikou radost nám udělá přáníčko s osobním vzkazem, třeba nějakou
@@ -314,11 +347,13 @@
       </p>
     </section>
 
+    <div class="divider-img">
+      <img src="img/23 b.png" style="width: 400px" />
+    </div>
+
     <section>
       <div class="heading-container">
-        <img src="img/3.png" style="width: 100px" />
-        <h2>Fotky</h2>
-        <img src="img/1.png" class="img-vert-flip" style="width: 100px" />
+        <h2 class="section-heading" style="color: var(--blue)">Fotky</h2>
       </div>
       <p>
         Máme domluveného profesionálního a velice šikovného fotografa, takže
@@ -330,7 +365,6 @@
     <!-- Footer -->
     <footer>
       <div class="monogram">M&amp;B</div>
-      <p>Nepropadejte panice!</p>
     </footer>
   </body>
 </html>
