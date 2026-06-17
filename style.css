@@ -233,23 +233,7 @@ section .heading-container {
 
 /* ─── Footer ────────────────────────────────────────────────────── */
 footer {
-  padding: 3rem 1.5rem;
+  padding: 3rem;
   text-align: center;
-  background: var(--dark);
-  color: #8c8078;
-}
-
-footer .monogram {
-  font-family: var(--serif);
-  font-size: 1.8rem;
-  letter-spacing: 0.1em;
-  color: var(--accent);
-  margin-bottom: 0.6rem;
-}
-
-footer p {
-  color: #8c8078;
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
-  max-width: none;
+  background: var(--warm);
 }
